@@ -1,15 +1,17 @@
 .hero {
-    background-image: url("../images/hero/banner1.jpg");
+    // background-image: url("../images/hero/banner1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 735px;
     min-width: 100%;
-    padding-bottom: 26px;
+    // padding-bottom: 26px;
     position: relative;
+    box-sizing: border-box;
 }
 
 .hero_div {
     position: absolute;
+    z-index: 2;
     top: 328px;
     left: 0;
     width: 1350px;
@@ -24,8 +26,8 @@
 
 .hero_propouse {
     position: absolute;
-    left: 0;
-    top: 394px;
+    left: calc(calc(100vw - 1140px) / 2);
+    top: 66px;
 
     & .hero_propouse_text {
         font-family: Arial;

@@ -1,0 +1,42 @@
+.offer_form {
+    padding-top: 48px;
+    padding-bottom: 42px;
+    background-image: url("../images/offer.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.offer_form_title {
+    font-family: Arial;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 34px;
+}
+
+.form {
+    width: 100%;
+    background-color: #0000008e;
+    min-height: 131px;
+    display: flex;
+    align-items: center;
+    padding: 44px 30px 40px 30px;
+    box-sizing: border-box;
+
+    &_input {
+        background: transparent;
+        border: none;
+        border-bottom: solid 1px #ffffff6b;
+        margin-right: 30px;
+        outline: none;
+    }
+
+    & .submit_btn {
+        width: 254px;
+        height: 48px;
+        background-color: #fbd341;
+        border-radius: 10px;
+        opacity: 1;
+    }
+}

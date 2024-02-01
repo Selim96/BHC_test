@@ -1,0 +1,149 @@
+.tours {
+    padding-top: 72px;
+    padding-bottom: 74px;
+    background-color: #fff;
+}
+
+.tours_type_list{
+    display: flex;
+    padding-bottom: 71px;
+
+    & .tours_type_item {
+        margin-right: 32px;
+        font-family: Arial;
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 700;
+        color: #000000;
+        cursor: pointer;
+    }
+    & .type_choosen {
+        font-family: Arial;
+        font-size: 20px;
+        line-height: 1.5;
+        font-weight: 700;
+        color: #fbd341;
+    }
+}
+
+
+
+.tours_list_wrap {
+    display: none;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.swiper-wrapper2 {
+    // padding: 0 60px;
+}
+
+.swiper2 {
+    & .swiper-slide2 {
+        // width: 520px !important;
+        height: 202px !important;
+        min-height: 202px;
+        background-color: #f8f7f7;
+        border-radius: 7px;
+    }
+}
+
+.shown {
+    display: block;
+}
+
+
+.tour_card {
+    display: flex;
+    padding: 14px;
+    position: relative;
+
+    & .image_wrap {
+        width: 187px;
+        height: 175px;
+        // background-color: #6958a4;
+        border-radius: 7px;
+        overflow: hidden;
+        margin-right: 28px;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            min-height: 0;
+        }
+    }
+
+    & .card_content {
+        padding-top: 11px;
+        text-align: start;
+    }
+    & .card_title {
+        font-family: Arial;
+        font-size: 17px;
+        font-weight: 700;
+        color: #000000;
+        line-height: 1.2;
+        margin-bottom: 6px;
+    }
+    & .card_date {
+        font-family: Arial;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #3a3a3a;
+        margin-bottom: 10px;
+    }
+    & .card_line {
+        width: 270px;
+        height: 1px;
+        opacity: 0.1;
+        background-color: #6a6a6a;
+        margin-bottom: 17px;
+    }
+    & .card_text {
+        font-family: Arial;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #3a3a3a;
+        margin-bottom: 24px;
+    }
+    & .card_price_value {
+        position: relative;
+        font-family: Arial;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #000000;
+        width: 90px;
+    }
+    & .card_price_dif {
+        position: absolute;
+        top: 0;
+        right: -4px;
+        transform: translateX(100%);
+        font-family: Arial;
+        font-size: 11px;
+        line-height: 1.2;
+        font-weight: 400;
+        color: #8a8a8a;
+    }
+
+    & .card_btn {
+        position: absolute;
+        bottom: 18px;
+        right: 20px;
+        width: 37px;
+        height: 37px;
+        background-color: #fbd341;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &> img {
+            width: 6px;
+            height: 12px;
+            min-height: 12px;
+        }
+    }
+}

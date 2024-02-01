@@ -5,7 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kuraj-Tur</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+    
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+    
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+    
+        .swiper-slide {
+            min-height: 735px;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          min-height: 735px;
+          object-fit: cover;
+        }
+
+        .mySwiper .swiper-pagination {
+            text-align: start;
+            left: calc(calc(100vw - 1140px) / 2);
+            bottom: 26px;
+        }
+        .mySwiper .swiper-pagination> span {
+            width: 14px;
+            height: 14px;
+        }
+
+        /* ============ */
+        .swiper2 {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide2 {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        /* .swiper-slide2 img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        } */
+
+        
+    </style>
 </head>
 <body>
     <header class="header">
@@ -103,17 +179,339 @@
     </header>
 
     <section class="hero">
-        <div class="hero_div"></div>
+        <div class="hero_div">
+            <div class="hero_propouse">
+                <p class="hero_propouse_text">Лучшие предложения по солнечному Египту из Харькова</p>
+                <a class="hero_propouse_btn" href="#form">Получить предложение</a>
+            </div>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./images/hero/banner1.jpg" alt="foto1"></div>
+              <div class="swiper-slide"><img src="./images/hero/banner2.jpg" alt="foto2"></div>
+              <div class="swiper-slide"><img src="./images/hero/banner3.jpg" alt="foto3"></div>
+              <div class="swiper-slide"><img src="./images/hero/banner4.jpg" alt="foto4"></div>
+              <div class="swiper-slide"><img src="./images/hero/banner5.jpg" alt="foto5"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="tours">
         <div class="container">
-            <div class="hero_wrapper">
-                <div class="hero_propouse">
-                    <p class="hero_propouse_text">Лучшие предложения по солнечному Египту из Харькова</p>
-                    <a class="hero_propouse_btn" href="#form">Получить предложение</a>
+            <ul class="tours_type_list">
+                <li class="tours_type_item type_choosen" id="tours_type1">Горящие туры</li>
+                <li class="tours_type_item" id="tours_type2">Популярные туры</li>
+            </ul>
+        </div>
+        <div class="tours_list_wrap" id="tours_list1">
+            <div class="swiper2 swiper mySwiper2">
+                <div class="swiper-wrapper swiper-wrapper2">
+                  <div class="swiper-slide swiper-slide2">
+                    <div class="tour_card">
+                        <div class="image_wrap">
+                            <img class="card_img" src="./images/tours/tours-img.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h3 class="card_title">8 марта в Cyrene Sharm hotel</h3>
+                            <p class="card_date">(12.03.2018 — 19.03.2018)</p>
+                            <div class="card_line"></div>
+                            <p class="card_text">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <div class="card_price">
+                                <p class="card_price_value">1 259 грн <span class="card_price_dif">/за 1 человека</span></p>
+                                
+                            </div>
+                        </div>
+                        <a class="card_btn" href="#"><img src="./images/icons/arrow_right.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide2">
+                    <div class="tour_card">
+                        <div class="image_wrap">
+                            <img class="card_img" src="./images/tours/tours-img2.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h3 class="card_title">8 марта в Cyrene Sharm hotel</h3>
+                            <p class="card_date">(12.03.2018 — 19.03.2018)</p>
+                            <div class="card_line"></div>
+                            <p class="card_text">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <div class="card_price">
+                                <p class="card_price_value">1 259 грн <span class="card_price_dif">/за 1 человека</span></p>
+                                
+                            </div>
+                        </div>
+                        <a class="card_btn" href="#"><img src="./images/icons/arrow_right.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide2">
+                    <div class="tour_card">
+                        <div class="image_wrap">
+                            <img class="card_img" src="./images/tours/tours-img1.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h3 class="card_title">8 марта в Cyrene Sharm hotel</h3>
+                            <p class="card_date">(12.03.2018 — 19.03.2018)</p>
+                            <div class="card_line"></div>
+                            <p class="card_text">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <div class="card_price">
+                                <p class="card_price_value">1 259 грн <span class="card_price_dif">/за 1 человека</span></p>
+                                
+                            </div>
+                        </div>
+                        <a class="card_btn" href="#"><img src="./images/icons/arrow_right.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide2">
+                    <div class="tour_card">
+                        <div class="image_wrap">
+                            <img class="card_img" src="./images/tours/tours-img.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h3 class="card_title">8 марта в Cyrene Sharm hotel</h3>
+                            <p class="card_date">(12.03.2018 — 19.03.2018)</p>
+                            <div class="card_line"></div>
+                            <p class="card_text">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <div class="card_price">
+                                <p class="card_price_value">1 259 грн <span class="card_price_dif">/за 1 человека</span></p>
+                                
+                            </div>
+                        </div>
+                        <a class="card_btn" href="#"><img src="./images/icons/arrow_right.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide2">
+                    <div class="tour_card">
+                        <div class="image_wrap">
+                            <img class="card_img" src="./images/tours/tours-img2.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h3 class="card_title">8 марта в Cyrene Sharm hotel</h3>
+                            <p class="card_date">(12.03.2018 — 19.03.2018)</p>
+                            <div class="card_line"></div>
+                            <p class="card_text">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <div class="card_price">
+                                <p class="card_price_value">1 259 грн <span class="card_price_dif">/за 1 человека</span></p>
+                                
+                            </div>
+                        </div>
+                        <a class="card_btn" href="#"><img src="./images/icons/arrow_right.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide2">
+                    <div class="tour_card">
+                        <div class="image_wrap">
+                            <img class="card_img" src="./images/tours/tours-img1.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h3 class="card_title">8 марта в Cyrene Sharm hotel</h3>
+                            <p class="card_date">(12.03.2018 — 19.03.2018)</p>
+                            <div class="card_line"></div>
+                            <p class="card_text">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <div class="card_price">
+                                <p class="card_price_value">1 259 грн <span class="card_price_dif">/за 1 человека</span></p>
+                                
+                            </div>
+                        </div>
+                        <a class="card_btn" href="#"><img src="./images/icons/arrow_right.png" alt=""></a>
+                    </div>
+                  </div>
                 </div>
-                <div class="dots"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+        <div class="tours_list_wrap" id="tours_list2">
+            <div class="swiper2 swiper mySwiper2">
+                <div class="swiper-wrapper swiper-wrapper2">
+                  <div class="swiper-slide swiper-slide2">
+                    <div class="tour_card">
+                        <div class="image_wrap">
+                            <img class="card_img" src="./images/tours/tours-img.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h3 class="card_title">8 марта в Cyrene Sharm hotel</h3>
+                            <p class="card_date">(12.03.2018 — 19.03.2018)</p>
+                            <div class="card_line"></div>
+                            <p class="card_text">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <div class="card_price">
+                                <p class="card_price_value">1 259 грн <span class="card_price_dif">/за 1 человека</span></p>
+                                
+                            </div>
+                        </div>
+                        <a class="card_btn" href="#"><img src="./images/icons/arrow_right.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide2">
+                    <div class="tour_card">
+                        <div class="image_wrap">
+                            <img class="card_img" src="./images/tours/tours-img2.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h3 class="card_title">8 марта в Cyrene Sharm hotel</h3>
+                            <p class="card_date">(12.03.2018 — 19.03.2018)</p>
+                            <div class="card_line"></div>
+                            <p class="card_text">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <div class="card_price">
+                                <p class="card_price_value">1 259 грн <span class="card_price_dif">/за 1 человека</span></p>
+                                
+                            </div>
+                        </div>
+                        <a class="card_btn" href="#"><img src="./images/icons/arrow_right.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide2">
+                    <div class="tour_card">
+                        <div class="image_wrap">
+                            <img class="card_img" src="./images/tours/tours-img1.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h3 class="card_title">8 марта в Cyrene Sharm hotel</h3>
+                            <p class="card_date">(12.03.2018 — 19.03.2018)</p>
+                            <div class="card_line"></div>
+                            <p class="card_text">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <div class="card_price">
+                                <p class="card_price_value">1 259 грн <span class="card_price_dif">/за 1 человека</span></p>
+                                
+                            </div>
+                        </div>
+                        <a class="card_btn" href="#"><img src="./images/icons/arrow_right.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide2">
+                    <div class="tour_card">
+                        <div class="image_wrap">
+                            <img class="card_img" src="./images/tours/tours-img.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h3 class="card_title">8 марта в Cyrene Sharm hotel</h3>
+                            <p class="card_date">(12.03.2018 — 19.03.2018)</p>
+                            <div class="card_line"></div>
+                            <p class="card_text">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <div class="card_price">
+                                <p class="card_price_value">1 259 грн <span class="card_price_dif">/за 1 человека</span></p>
+                                
+                            </div>
+                        </div>
+                        <a class="card_btn" href="#"><img src="./images/icons/arrow_right.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide2">
+                    <div class="tour_card">
+                        <div class="image_wrap">
+                            <img class="card_img" src="./images/tours/tours-img2.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h3 class="card_title">8 марта в Cyrene Sharm hotel</h3>
+                            <p class="card_date">(12.03.2018 — 19.03.2018)</p>
+                            <div class="card_line"></div>
+                            <p class="card_text">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <div class="card_price">
+                                <p class="card_price_value">1 259 грн <span class="card_price_dif">/за 1 человека</span></p>
+                                
+                            </div>
+                        </div>
+                        <a class="card_btn" href="#"><img src="./images/icons/arrow_right.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide2">
+                    <div class="tour_card">
+                        <div class="image_wrap">
+                            <img class="card_img" src="./images/tours/tours-img1.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h3 class="card_title">8 марта в Cyrene Sharm hotel</h3>
+                            <p class="card_date">(12.03.2018 — 19.03.2018)</p>
+                            <div class="card_line"></div>
+                            <p class="card_text">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <div class="card_price">
+                                <p class="card_price_value">1 259 грн <span class="card_price_dif">/за 1 человека</span></p>
+                                
+                            </div>
+                        </div>
+                        <a class="card_btn" href="#"><img src="./images/icons/arrow_right.png" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
             </div>
         </div>
     </section>
+
+    <section class="advantages">
+        <div class="container">
+            <h2 class="advantages_title">НАШИ ПРЕИМУЩЕСТВА</h2>
+            <div class="advantages_content">
+                <img class="advantages_img" src="./images/advantages.jpg" alt="man">
+                <p class="advantages_text">Очень долго подбирали разные варианты для того, чтобы отпраздновать свой юбилейный День рождения в путешествии и не могли определиться... Решили обратиться за помощью в турагенство. Гульнара, выслушав все пожелания, предложила отдых в Турции, отель Justiniano Club Park Conti 5* в Окурджалар возле Аланьи. Мы очень благодарны ей за предложенный вариант!!!! Отдых получился отличный! Отель с большой ухоженной территорией, внимательный обслуживающий персонал. Отличный номер с видом на море.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="offer_form">
+        <div class="container">
+            <h3 class="offer_form_title">ХОЧУ ПРЕДЛОЖЕНИЕ ПО ТУРУ</h3>
+            <form class="form" id="form" >
+                <input class="form_input" type="text" name="name" id="name" placeholder="Имя" required>
+                <input class="form_input" type="text" name="email" id="email" placeholder="Email" required>
+                <input class="form_input" type="number" name="phone" id="phone" placeholder="Телефон" required>
+                <select class="form_input" name="country" id="country" required>
+                    <option value="" disabled selected hidden>Страна тура</option>
+                    <option value="Турция">Турция</option>
+                    <option value="Египет">Египет</option>
+                    <option value="Шри-Ланка">Шри-Ланка</option>
+                    <option value="Доминикана">Доминикана</option>
+                </select>
+                <button type="submit" class="submit_btn">Получить предложение</button>
+            </form> 
+        </div>
+        
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+    </script>
+    <script>
+        const windowWidth = window.innerWidth;
+        const largeWidth = 1900;
+        const mediumWidth = 750;
+
+        let space = 50;
+        let slidesCount = 3
+        
+        if(windowWidth < largeWidth && windowWidth > mediumWidth) {
+            slidesCount = 2;
+            space =(windowWidth -120 - 130)/slidesCount-520; 
+        }
+        if(windowWidth < mediumWidth) {
+            slidesCount = 1;
+        }
+        var swiper = new Swiper(".mySwiper2", {
+          slidesPerView: slidesCount,
+          spaceBetween: space,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination2",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+    </script>
+
+    <script src="./index.js"></script>
 </body>
 </html>
 
