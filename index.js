@@ -1,4 +1,4 @@
-
+const allLinks = [...document.querySelectorAll("a")];
 const tours_type1 = document.getElementById("tours_type1");
 const tours_type2 = document.getElementById("tours_type2");
 const tours_list1 = document.getElementById("tours_list1");
@@ -22,6 +22,15 @@ linkToHotTour.addEventListener("click", (e)=>showTours(1))
 linkToPopularTour.addEventListener("click", (e)=>showTours(2))
 
 tours_list1.classList.add("shown");
+
+const windowLocation = window.location;
+console.log(windowLocation)
+allLinks.forEach(item=>{
+    console.log(item.href)
+    if(item.pathname === "/") {
+        item.href = windowLocation.origin + windowLocation.pathname;
+    } 
+})
 
 
 function showTours(num) {
