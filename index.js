@@ -4,6 +4,9 @@ const tours_type2 = document.getElementById("tours_type2");
 const tours_list1 = document.getElementById("tours_list1");
 const tours_list2 = document.getElementById("tours_list2");
 
+const linkToHotTour = document.getElementById("hot_link");
+const linkToPopularTour = document.getElementById("popular_link");
+
 const countryInput = document.getElementById("country");
 const selectMenu = document.querySelector(".select");
 const selectItem = [...document.querySelectorAll(".select_item")];
@@ -15,6 +18,8 @@ submitBtn.addEventListener("click", submitForm)
 
 tours_type1.addEventListener("click", (e)=>showTours(1));
 tours_type2.addEventListener("click", (e)=>showTours(2));
+linkToHotTour.addEventListener("click", (e)=>showTours(1))
+linkToPopularTour.addEventListener("click", (e)=>showTours(2))
 
 tours_list1.classList.add("shown");
 
