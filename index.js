@@ -1,0 +1,5 @@
+function fff() {
+    if(true) {
+        
+    }
+}

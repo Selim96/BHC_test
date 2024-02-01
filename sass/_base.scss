@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Arial Regular';
+    src: url('/fonts/ArialMT.eot');
+    src: url('/fonts/ArialMT.eot?#iefix') format('embedded-opentype'), url('/fonts/ArialMT.woff') format('woff'), url('/fonts/ArialMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial Bold';
+    src: url('/fonts/Arial-BoldMT.eot');
+    src: url('/fonts/Arial-BoldMT.eot?#iefix') format('embedded-opentype'), url('/fonts/Arial-BoldMT.woff') format('woff'), url('/fonts/Arial-BoldMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Arial Regular';
+    @media (max-width: 1200px) {
+        font-size: 14px;
+    }
+    @media (max-width: 992px) {
+        font-size: 12px;
+    }
+    @media (max-width: 768px) {
+        font-size: 10px;
+    }
+}
+
+body {
+    // position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    overflow-x: hidden;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width:1240px;
+    max-height: 100%;
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
