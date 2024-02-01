@@ -197,7 +197,7 @@
         </div>
     </section>
 
-    <section class="tours">
+    <section class="tours" id="tours">
         <div class="container">
             <ul class="tours_type_list">
                 <li class="tours_type_item type_choosen" id="tours_type1">Горящие туры</li>
@@ -458,17 +458,75 @@
                 <input class="form_input" type="text" name="name" id="name" placeholder="Имя" required>
                 <input class="form_input" type="text" name="email" id="email" placeholder="Email" required>
                 <input class="form_input" type="number" name="phone" id="phone" placeholder="Телефон" required>
-                <select class="form_input" name="country" id="country" required>
-                    <option value="" disabled selected hidden>Страна тура</option>
-                    <option value="Турция">Турция</option>
-                    <option value="Египет">Египет</option>
-                    <option value="Шри-Ланка">Шри-Ланка</option>
-                    <option value="Доминикана">Доминикана</option>
-                </select>
+
+                <div class="select_wrapper">
+                    <input class="form_input" type="text" name="country" id="country" placeholder="Страна тура" required readonly>
+                    <span class="select_arrow"><img src="./images/icons/arrow_down-white.png" alt=""></span>
+                    <div class="select ">
+                        <div class="select_item">Турция</div>
+                        <div class="select_item">Египет</div>
+                        <div class="select_item">Шри-Ланка</div>
+                        <div class="select_item">Доминикана</div>
+                    </div>
+                </div>
                 <button type="submit" class="submit_btn">Получить предложение</button>
             </form> 
         </div>
-        
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer_wrapper">
+                <div class="footer_about">
+                    <img src="./images/footer-logo.png" alt="logo">
+                    <div class="about_line"></div>
+                    <p class="footer_text">Кураж тур агенство,которое предоставляет услуги по поиску, оформлению и подбору туров для вас и ваших родных.</p>
+                    <div class="about_line"></div>
+                </div>
+                <div class="footer_nav">
+                    <h3 class="footer_title">Навигация</h3>
+                    <ul class="footer_list">
+                        <li class="footer_list_item"><a href="/">Главная</a> 
+                            </li>
+                        <li class="footer_list_item"><a href="/">О компани</a> 
+                            </li>
+                        <li class="footer_list_item"><a href="#tours">Туры</a>  
+                            </li>
+                        <li class="footer_list_item"><a href="#">Контакты</a> 
+                            </li>
+                        <li class="footer_list_item"><a href="#form">Услуги</a> </li>
+                    </ul>
+                </div>
+                <div class="footer_support">
+                    <h3 class="footer_title">Поддержка</h3>
+                    <ul class="footer_list">
+                        <li class="footer_list_item">FAQ</li>
+                        <li class="footer_list_item">Блог</li>
+                        <li class="footer_list_item">Обратная связь</li>
+                    </ul>
+                </div>
+                <div class="footer_contacts">
+                    <h3 class="footer_title">Контакты</h3>
+                    <div class="header_contacts_wrapper">
+                        <img src="./images/icons/nav.png" alt="nav">
+                        <h3>г. Харьков, ул. Мироносицкая 10а</h3>
+                    </div>
+                    <div class="header_contacts_wrapper">
+                        <img src="./images/icons/phone.png" alt="phone">
+                        <h3>+38 (099) 990-81-00 <span>(viber, telegram)</span></h3>
+                    </div>
+                    <div class="about_line"></div>
+                    <div class="header_social_wrapper">
+                        <a href="/">
+                            <img class="header_social_icon" title="Facebook"
+                                src="./images/icons/facebook.png" alt="facebook-icon"></a>
+                        <a href="/">
+                            <img class="header_social_icon" title="Instagram"
+                                src="./images/icons/instagram.png" alt="instagram-icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
